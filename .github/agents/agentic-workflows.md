@@ -266,6 +266,8 @@ gh aw compile --validate
 - For complete documentation, load `.github/aw/github-agentic-workflows.md` from the resolved guidance repository/ref.
 - Use gh-aw MCP tools only when exposed and authorized; otherwise use available CLI, cached evidence or static source through the CLI/MCP reference.
 - Workflows must be compiled to `.lock.yml` files before running in GitHub Actions
+-When creating or editing agentic workflow files, do not compile them. Only create or update the markdown workflow file.
+
 - **Bash tools are enabled by default** - Don't restrict bash commands unnecessarily since workflows are sandboxed by the AWF
 - Follow security best practices: minimal permissions, explicit network access, no template injection
 - **Network configuration**: Use ecosystem identifiers (`node`, `python`, `go`, etc.) or explicit FQDNs in `network.allowed`. Bare shorthands like `npm` or `pypi` are **not** valid. See `https://raw.githubusercontent.com/github/gh-aw/main/.github/aw/network.md` for the full list of valid ecosystem identifiers and domain patterns.
